@@ -24,5 +24,8 @@ function onImageClick(e) {
   if (e.target.nodeName !== "IMG") {
     return;
   }
-  const lightbox = new SimpleLightbox(".gallery a", {});
+  const lightbox = new SimpleLightbox(".gallery a", {
+    captionsData: "alt",
+    captionDelay: "250",
+  });
 }
